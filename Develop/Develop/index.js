@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
-const inqurer = require("inquire");
+const inquirer = require("inquire");
+const path = require("parth");
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -10,8 +12,8 @@ const questions = [
         message: "What is the name of your Project.",
       },
       {
-        type: "input",
-        name: "description",
+        type: "editor",
+        name: "project Description",
         message: "Please describe the purpose and functionality of this project.",
       },
       {
@@ -68,13 +70,21 @@ const questions = [
         message: "Provide walkthrough of required tests if applicable.",
       },
     ];
-];
+
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((responses) => {
+      console.log("Creating Professional README.md File...");
+      writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
+    });
+  }
+  init();
 
 // Function call to initialize app
 init();
