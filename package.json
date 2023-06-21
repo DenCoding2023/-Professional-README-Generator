@@ -1,0 +1,22 @@
+{
+  "name": "-professional-readme-generator",
+  "version": "8.2.4",
+  "description": "Dennis Read me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenCoding2023/-Professional-README-Generator.git"
+  },
+  "author": "Dennis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenCoding2023/-Professional-README-Generator/issues"
+  },
+  "homepage": "https://github.com/DenCoding2023/-Professional-README-Generator#readme",
+  "keywords": [
+    "project"
+  ]
+}

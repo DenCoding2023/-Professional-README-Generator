@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquire");
-const path = require("parth");
-const generateMarkdown = require('./utils/generateMarkdown');
+const path = require("path");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -12,7 +12,7 @@ const questions = [
         message: "What is the name of your Project.",
       },
       {
-        type: "editor",
+        type: "input",
         name: "project Description",
         message: "Please describe the purpose and functionality of this project.",
       },
@@ -48,27 +48,7 @@ const questions = [
         message:
           "State the languages or technologies associated with this project.",
       },
-      {
-        type: "input",
-        name: "creator",
-        message: "Write your GitHub username.",
-      },
-      {
-        type: "input",
-        name: "email",
-        message: "Provide a valid email address.",
-      },
-      {
-        type: "input",
-        name: "contributors",
-        message: "Please list any contributors. (Use GitHub usernames)",
-        default: "",
-      },
-      {
-        type: "input",
-        name: "test",
-        message: "Provide walkthrough of required tests if applicable.",
-      },
+   
     ];
 
 
@@ -84,7 +64,6 @@ function init() {
       writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
     });
   }
-  init();
+  // Function call to initialize app
 
-// Function call to initialize app
-init();
+  init();
