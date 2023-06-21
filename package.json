@@ -18,5 +18,8 @@
   "homepage": "https://github.com/DenCoding2023/-Professional-README-Generator#readme",
   "keywords": [
     "project"
-  ]
+  ],
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }

@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
-const inquirer = require("inquire");
+const inquirer = require("inquirer");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -14,17 +14,17 @@ const questions = [
       {
         type: "input",
         name: "project Description",
-        message: "Please describe the purpose and functionality of this project.",
+        message: "Please describe the purpose and reason for your project.",
       },
       {
         type: "input",
-        name: "screenshot",
-        message: "Please provide the relative path to the image you want to use as the screenshot."
+        name: "table of content",
+        message: "Write down the tasble of Content?."
       },
       {
         type: "input",
-        name: "link",
-        message: "Please provide a URL where a user can access your deployed application."
+        name: "Instalation Instructions",
+        message: "What are the steps to Install your project? "
       },
       {
         type: "checkbox",
@@ -39,14 +39,14 @@ const questions = [
       },
       {
         type: "input",
-        name: "features",
-        message: "List some cool features about this project here.",
+        name: "Contributing",
+        message: "List collaborators, or links to GitHub profiles.",
       },
       {
         type: "input",
-        name: "usage",
+        name: "GitHub username?",
         message:
-          "State the languages or technologies associated with this project.",
+          "Write the name of your GitHub username?"
       },
    
     ];
