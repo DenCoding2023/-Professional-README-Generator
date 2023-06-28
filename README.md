@@ -50,4 +50,4 @@ https://github.com/DenCoding2023/-Professional-README-Generator.git
 
 ## Contact 
 My name is Dennis Luciano.
-You can email me at: visiontopia@gmail.com
+* You can email me at: visiontopia@gmail.com
