@@ -39,7 +39,7 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
   ## Screenshot
-  ![alt-text](${data.screenshot})
+  ${data.screenshot}
   ## Table of Contents
   * [Installations](#installations)
   * [Usage](#usageProject)
@@ -47,8 +47,8 @@ function generateMarkdown(data) {
   * [Contributors](#contributors)
   * [Testing](#testing)
   * [Questions](#questions)
-  ## Features
-  ${data.require}
+  ## Installations
+  ${data.installations}
   ## How to Use This Application:
   ${data.usage}
   ## Contributors
@@ -56,12 +56,11 @@ function generateMarkdown(data) {
   ## Testing
   ${data.test}
   ## Questions
-  Please send your questions [here](mailto:${data.email}?subject=[GitHub]%20Dev%20Connect) or visit [github/${data.creator}](https://github.com/${data.creator}).
+  Please send your questions (${data.email}) or visit [github/${data.creator}](https://github.com/${data.creator}).
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
   `;
 
   }
-
 
 module.exports = generateMarkdown;

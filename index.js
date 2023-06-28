@@ -71,42 +71,11 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((responses) => {
-    console.log("Creating Professional README.md File...");
+    console.log("Your Professional README.md File is now created...");
     writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
   });
 }
 
-
-
-// Function to generate Markdown content based on user responses
-// function generateMarkdown(data) {
-//   return `
-//     # ${data['title']}
-    
-//     ## Description
-//     ${data['description']}
-    
-//     ## Table of Contents
-//     ${data['table of content']}
-    
-//     ## Installation Instructions
-//     ${data['Instalation Instructions']}
-    
-//     ## License
-//     This project is licensed under the ${data['license']} license.
-    
-//     ## Dependencies
-//     ${data['require']}
-    
-//     ## Contributing
-//     ${data['Contributing']}
-    
-//     ## GitHub Username
-//     ${data['GitHub username?']}
-//   `;
-// }
-
-// Function call to initialize app
 init();
 
 module.exports = generateMarkdown;
