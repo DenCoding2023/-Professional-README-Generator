@@ -4,7 +4,7 @@ const inquirer = require("inquirer");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// Rest of your code...
+
 // TODO: Create an array of questions for user input
 const questions = [
   {

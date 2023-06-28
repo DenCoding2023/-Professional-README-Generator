@@ -26,7 +26,7 @@ function renderLicenseSection(license) {
       return '## License\n\nThis project is licensed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0).';
     case 'GPL-3.0':
       return '## License\n\nThis project is licensed under the [GNU General Public License v3.0](https://opensource.org/licenses/GPL-3.0).';
-    // Add more cases for other licenses as needed
+    
     default:
       return '';
   }
