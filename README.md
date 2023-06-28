@@ -13,13 +13,14 @@ I want a README generator. So that I can quickly create a professional README fo
 
   ## Table of Contents
   * [Installations](#installations)
-  * [Usage](#usageProject)
-  * [How to Use This Application](#HowtoUseThisApplication)
-  * [Contributors](#contributors)
-  * [Testing](#testing)
-  * [Questions](#questions)
+  * [Usage](#usage)
+  * [license](#license)
+  * [Credits](#credits)
+  * [Repository](#class-repository)
+  * [Test](#test)
+  * [contact](#contact)
 
-## Installation
+## Installations
 Start by Installing Node.js and npm install
 Install the dependencies(Inquire 8.24, fs)
 Clone the repository git@github.com:/DenCoding2023/-Professional-README-Generator.git
@@ -39,6 +40,9 @@ References:
 https://github.com/SBoudrias/Inquirer.js/tree/master/packages/prompts
 https://github.com/justjenb/readmefy/blob/main/utils/generateMarkdown.js
 https://github.com/dopecello/readme-generator/blob/main/README.md
+
+## Test
+Run the app in the terminal, answer the quesion and check the dist folder. 
 
 
 ## Class Repository:
