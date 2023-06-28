@@ -11,14 +11,13 @@ Working in this project allowed me to improve my JavaScript skills, and getting 
 As a coding boot camp student. 
 I want a README generator. So that I can quickly create a professional README for a new project
 
-
-## Table of Content
-Installations
-Usage
-License
-Credits
-Test
-Contact
+  ## Table of Contents
+  * [Installations](#installations)
+  * [Usage](#usageProject)
+  * [How to Use This Application](#HowtoUseThisApplication)
+  * [Contributors](#contributors)
+  * [Testing](#testing)
+  * [Questions](#questions)
 
 ## Installation
 Start by Installing Node.js and npm install
