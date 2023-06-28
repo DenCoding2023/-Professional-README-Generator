@@ -38,20 +38,16 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
   ## Description
   ${data.description}
-  ## Deployed Application URL
-  ${data.link}
   ## Screenshot
   ![alt-text](${data.screenshot})
   ## Table of Contents
   * [Installations](#installations)
-  * [Usage](#usage)
+  * [Usage](#usageProject)
   * [How to Use This Application](#HowtoUseThisApplication)
   * [Contributors](#contributors)
   * [Testing](#testing)
   * [Questions](#questions)
   ## Features
-  ${data.features}
-  ## Languages & Dependencies
   ${data.require}
   ## How to Use This Application:
   ${data.usage}
